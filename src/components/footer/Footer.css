@@ -1,0 +1,210 @@
+/***********FOOTER******************/
+footer
+{
+    background-color: white;
+    line-height: 2;
+}
+
+/***********HELP CENTER*****************/
+.help-center
+{
+    display:grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+}
+
+.help-center>div:nth-child(1)
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10%;
+    line-height: 1.5;
+    background-color: black;
+    color: white;
+    height:100%;
+}
+
+.help-center div
+{
+
+    padding:20%;
+    justify-items: left;
+    align-items: center;
+    padding-left: 15%;
+}
+
+.help-center button
+{
+    width:180px;
+    height:45px;
+    font-size:1rem;
+}
+
+.help-center button:hover
+{
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+
+/***********ACCEPTED PAYMENTS************/
+.general
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    padding-top: 10%;
+}
+.general>div
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    height:100%;
+    padding-bottom: 5%;
+}
+
+.general>div
+{
+    border-bottom: solid 0.1rem #edecec;
+    width:90%;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+ul
+{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.general h4
+{
+    padding-bottom: 30px;
+}
+
+#social-links
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: left;
+    color:var(--primary-txt-color);
+}
+
+#social-links a
+{
+    color:var(--primary-txt-color);
+    font-size:1rem;
+}
+
+.acc-payments
+{
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items:center;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+
+.acc-payments>p
+{
+    margin: 60px 40px;
+}
+
+.acc-payments img
+{
+    height:50px;
+    width:auto;
+    padding-right:30px;
+}
+
+.copyright
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--secondary-bg-color);
+    min-height:5vh;
+}
+
+#underline-text
+{
+    color:black;
+    text-decoration: underline;
+    padding-left: 5px;
+}
+
+#portfolio-text
+{
+    font-weight: 800;
+}
+
+
+/*/ Medium devices (tablets, less than 992px)/*/
+
+@media (max-width: 991.98px) 
+{
+    .help-center
+    {
+        grid-template-columns: 1fr;
+    }
+    
+    .help-center>div:nth-child(1)
+    {
+        justify-items: center; 
+    }
+    
+    .general>div
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        justify-items: center;
+        text-align: center;
+        height:100%;
+    }
+
+    .acc-payments>div
+    {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-items: center;
+    }
+
+    #social-links
+    {
+
+        justify-items: center;
+
+    }
+
+}
+
+/*/ Extra small devices (portrait phones, less than 576px)/*/
+@media (max-width: 575.98px) 
+{
+    .acc-payments>div
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+    }
+
+    .copyright
+    {
+        font-size: 0.8rem;
+    }
+
+    .acc-payments>p{
+        text-align: center;
+    }
+    
+
+}

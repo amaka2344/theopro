@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root
+{
+    --primary-bg-color:white;
+    --secondary-bg-color:#edecec;
+    --tertiary-bg-color:black;
+
+    --primary-txt-color:black;
+    --secondary-txt-color:white;
+    --tertiary-txt-color:#7620ff;
+
+    --primary-btn-bg-color:#7620ff;
+    --secondary-btn-bg-color:black;
+}
+
+
+/*CSS reset*/
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+/*UTILITIES  CLASSES*/
+
+body 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .11px;
+    background-color: var(--secondary-bg-color);
+    width:auto;
+}
+
+img
+{
+    max-width: 1200px;
+}
+
+button
+{
+    background-color: var(--primary-btn-bg-color);
+    color: var(--secondary-txt-color);
+    font-weight: 100;
+    width: 200px;
+    height:40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 30px;
+    border-style:solid ;
+    border-color: var(--primary-btn-bg-color);
+    cursor: pointer;
+}
+

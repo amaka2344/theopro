@@ -1,0 +1,151 @@
+/***********BEST SELLERS*****************/
+.best-sellers
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--primary-bg-color);
+    margin: 0px 30px 30px 30px;
+    min-height:60vh;
+    padding:5%;
+}
+
+.best-sellers h4
+{
+    font-size: 2rem;
+    padding-top: 2%;
+}
+
+.best-sellers>div
+{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-items: center;
+    align-items: center;
+    width:90%;
+}
+
+.best-sellers>div>div
+{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 50px ;
+    row-gap: 15px;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: #edecec;
+}
+
+.best-sellers img
+{
+    width:150px;
+}
+
+.best-sellers button
+{
+    width:250px;
+    height:50px;
+    border: solid 1px;
+    border-color: white;
+}
+
+.best-sellers button:hover
+{
+    background-color: black;
+}
+
+.section-three
+{
+    cursor: pointer;
+}
+
+.section-three > div:nth-child(1)
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: #d62e2c;
+    color:var(--secondary-txt-color);
+    width:30%;
+    height:30px;
+    font-weight: 100;
+}
+
+.section-three > div:nth-child(2)
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.section-three > div:nth-child(3)
+{
+    padding:2%;
+}
+
+.section-three > div:nth-child(4)
+{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    color:#7620ff;
+    padding:2%;
+    padding-bottom: 10%;
+}
+
+.section-three > div:nth-child(4)>div:nth-child(1)
+{
+    text-decoration: line-through;
+}
+
+/*/ Medium devices (tablets, less than 992px)/*/
+
+@media (max-width: 991.98px) 
+{
+
+    .best-sellers
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+        justify-items: center;
+        align-items: center;
+        background-color: var(--primary-bg-color);
+        margin: 0px 0px 30px 0px;
+        height:100%;
+        padding:5%;
+    }
+
+    .best-sellers>div
+    {
+        display:grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        width:90%;
+        padding:5%;
+    }
+
+    .best-sellers>div>div
+    {
+        display:grid;
+        grid-template-columns: 1fr;
+        width:50%;
+        border-style: solid;
+        border-width: 0.1rem;
+        border-color: #edecec;
+        margin-bottom:15px;
+    }
+}
+
+/*/ Extra small devices (portrait phones, less than 576px)/*/
+@media (max-width: 575.98px) 
+{
+
+    .best-sellers>div>div
+    {
+        width:100%;
+    }
+}

@@ -1,0 +1,113 @@
+
+/***********NEWSLETTER****************/
+.newsletter
+{
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: 0 30px 70px 30px;
+    height:270px;
+    background-color: var(--tertiary-txt-color);
+    color:white;
+}
+
+.newsletter>div
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 25%;
+
+}
+
+.newsletter h4
+{
+    font-size: 2rem;
+}
+
+.newsletter-form
+{
+   width:30vw;
+}
+
+.newsletter input
+{
+    width: 20vw;
+    height:40px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius:15px;
+    border-style:solid;
+    border-color: var(--secondary-bg-color);
+    padding-left: 20px;
+}
+
+.newsletter button
+{
+    background-color: black;
+    width:10vw;
+    height:40px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-style:solid;
+    border-color: black;
+}
+
+.newsletter button:hover
+{
+    background-color: #d1b4ff;
+    border-style:solid;
+    border-color: #d1b4ff;
+}
+
+
+/*/ Medium devices (tablets, less than 992px)/*/
+
+@media (max-width: 991.98px) 
+{
+
+    .newsletter
+    {
+        margin: 0 0px 70px 0px;
+        height:350px;
+       
+    }
+    .newsletter-form
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+        justify-items: center;
+       width:100%;
+    }
+
+    .newsletter input
+    {
+        width: 80%;
+        height:40px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius:20px;
+        border-style:solid;
+        border-color: var(--secondary-bg-color);
+        padding-left: 20px;
+    }
+
+    .newsletter button
+    {
+        border-top-left-radius: 30px;
+        border-bottom-left-radius:30px;
+        width:200px;
+    }
+
+
+}
+
+/*/ Extra small devices (portrait phones, less than 576px)/*/
+@media (max-width: 575.98px) 
+{
+
+}

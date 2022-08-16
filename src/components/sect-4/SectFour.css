@@ -1,0 +1,115 @@
+/**********SHOP BY CATEGORY*************/
+.shop-by-category
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 60%;
+    align-items: center;
+    background-color: var(--primary-bg-color);
+    margin: 0 30px 30px 30px;
+    width:auto;
+    min-height:80vh;
+
+}
+
+.shop-by-category h4
+{
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    height:100%;
+}
+
+
+.shop-by-category>div
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    min-height:100%;
+    column-gap: 5%;
+    row-gap: 5%;
+    justify-items: center;
+    align-items: center;
+    padding:5%;
+}
+
+.section-four
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    cursor: pointer;
+}
+
+
+.section-four img
+{
+    height:200px;
+    width:auto;
+    border-radius: 50%;
+}
+
+.section-four h6
+{
+    font-size: 1rem;
+}
+
+/*/ Medium devices (tablets, less than 992px)/*/
+
+@media (max-width: 991.98px) 
+{
+
+    .shop-by-category
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 90%;
+        justify-items: center;
+        align-items: center;
+        background-color: var(--primary-bg-color);
+        margin: 0 0px 30px 0px;
+        height:1800px;
+        padding:0%;
+    }
+
+    .shop-by-category>div
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5%;
+        row-gap: 5%;
+        justify-items: center;
+        align-items: center;
+        height:100%;
+    }
+
+}
+
+/*/ Extra small devices (portrait phones, less than 576px)/*/
+@media (max-width: 575.98px) 
+{
+
+    .shop-by-category
+    {
+
+        width:auto;
+        height:1100px;
+    
+    }
+
+    .shop-by-category>div
+    {
+        row-gap: 0%;
+        height:10%;
+        width:100%;
+    }
+    .section-four img
+    {
+        height:150px;
+        width:auto;
+        border-radius: 50%;
+    }
+
+}
